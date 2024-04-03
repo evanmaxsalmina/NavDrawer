@@ -4,13 +4,14 @@ public class Item {
 
     private String nama;
     private String rating;
-    private int gambar;
+    private int gambar, favorit;
 
-    public Item(String nama, String rating, int gambar) {
+    public Item(String nama, String rating, int gambar, int favorit) {
 
         this.nama = nama;
         this.gambar = gambar;
         this.rating = rating;
+        this.favorit = favorit;
     }
 
     public String getRating() {
@@ -26,6 +27,14 @@ public class Item {
 
     public void setGambar(int gambar) {
         this.gambar = gambar;
+    }
+
+    public int getFavorit() {
+        return favorit;
+    }
+
+    public void setFavorit(int favorit) {
+        this.favorit = favorit;
     }
 
     public String getNama() {

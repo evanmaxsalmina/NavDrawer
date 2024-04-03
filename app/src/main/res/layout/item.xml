@@ -27,7 +27,7 @@
                 android:scaleType="centerCrop"/>
 
             <ImageView
-                android:id="@+id/imageViewCorner"
+                android:id="@+id/favorit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/fav"
@@ -80,7 +80,8 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:src="@drawable/star"
-                        android:layout_gravity="center_vertical"/>
+                        android:layout_gravity="center_vertical"
+                        app:tint="#FFEB3B" />
                 </LinearLayout>
 
             </LinearLayout>

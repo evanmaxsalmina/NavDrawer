@@ -85,4 +85,5 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportActionBar().setTitle("Makanan dan Minuman Favorite Saya");
     }
+
 }

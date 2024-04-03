@@ -35,12 +35,12 @@ public class MakananKhas extends Fragment implements ItemAdapter.ItemClickListen
         recyclerView = view.findViewById(R.id.rvList);
         dataList = new ArrayList<>();
 
-        dataList.add(new Item("Lentog Tanjung", "5.0", R.drawable.lentog));
-        dataList.add(new Item("Opor Sungginan", "4.5", R.drawable.opor));
-        dataList.add(new Item("Ayam Gongso", "4.5", R.drawable.gongso));
-        dataList.add(new Item("Nasi Jangkrik", "4.5", R.drawable.jangkrik));
-        dataList.add(new Item("Pindang Kerbau", "4.5", R.drawable.pindang));
-        dataList.add(new Item("Lepet", "5.0", R.drawable.lepet));
+        dataList.add(new Item("Lentog Tanjung", "5.0", R.drawable.lentog, R.drawable.fav));
+        dataList.add(new Item("Opor Sungginan", "4.5", R.drawable.opor, R.drawable.fav));
+        dataList.add(new Item("Ayam Gongso", "4.5", R.drawable.gongso, R.drawable.fav));
+        dataList.add(new Item("Nasi Jangkrik", "4.5", R.drawable.jangkrik, R.drawable.fav));
+        dataList.add(new Item("Pindang Kerbau", "4.5", R.drawable.pindang, R.drawable.fav));
+        dataList.add(new Item("Lepet", "5.0", R.drawable.lepet, R.drawable.fav));
 
 
         adapter = new ItemAdapter(dataList, getContext());
@@ -54,4 +54,6 @@ public class MakananKhas extends Fragment implements ItemAdapter.ItemClickListen
     public void onItemClick(View view, int position) {
 
     }
+
+
 }

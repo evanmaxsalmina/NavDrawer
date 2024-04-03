@@ -36,6 +36,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
         holder.textNama.setText(item.getNama());
         holder.imageGambar.setImageResource(item.getGambar());
         holder.textRating.setText(item.getRating());
+        holder.favorite.setImageResource(item.getFavorit());
     }
 
     @Override
@@ -46,7 +47,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         TextView textNama;
-        ImageView imageGambar;
+        ImageView imageGambar, favorite;
 
         TextView textRating;
 
@@ -55,6 +56,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
             textNama = itemView.findViewById(R.id.nama);
             imageGambar = itemView.findViewById(R.id.gambar);
             textRating = itemView.findViewById(R.id.textRating);
+            favorite = itemView.findViewById(R.id.favorit);
         }
     }
 
