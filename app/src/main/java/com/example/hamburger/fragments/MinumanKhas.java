@@ -35,12 +35,12 @@ public class MinumanKhas extends Fragment implements ItemAdapter.ItemClickListen
         recyclerView = view.findViewById(R.id.rvList2);
         dataList = new ArrayList<>();
 
-        dataList.add(new Item(R.drawable.pejuh, "Wedang Pejuh"));
-        dataList.add(new Item(R.drawable.coro, "Wedang Coro"));
-        dataList.add(new Item(R.drawable.blung, "Wedang Blung"));
-        dataList.add(new Item(R.drawable.kopijetak, "Kopi Jetak"));
-        dataList.add(new Item(R.drawable.tisane, "Tisane"));
-        dataList.add(new Item(R.drawable.parijoto, "Jus Parijoto"));
+        dataList.add(new Item("Wedang Pejuh", "5.0", R.drawable.pejuh));
+        dataList.add(new Item("Kopi Jetak", "4.5", R.drawable.kopijetak));
+        dataList.add(new Item("Wedang Coro", "4.5", R.drawable.coro));
+        dataList.add(new Item("Wedang Blung", "4.5", R.drawable.blung));
+        dataList.add(new Item("Tisane", "4.5", R.drawable.tisane));
+        dataList.add(new Item("Jus Parijoto", "5.0", R.drawable.parijoto));
 
 
         adapter = new ItemAdapter(dataList, getContext());

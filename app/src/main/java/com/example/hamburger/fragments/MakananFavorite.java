@@ -35,12 +35,12 @@ public class MakananFavorite extends Fragment implements ItemAdapter.ItemClickLi
         recyclerView = view.findViewById(R.id.rvList3);
         dataList = new ArrayList<>();
 
-        dataList.add(new Item(R.drawable.lentog, "Lentog Tanjung"));
-        dataList.add(new Item(R.drawable.kopijetak, "Kopi Jetak"));
-        dataList.add(new Item(R.drawable.gongso, "Ayam Gongso"));
-        dataList.add(new Item(R.drawable.blung, "Wedang Blung"));
-        dataList.add(new Item(R.drawable.pindang, "Pindang Kerbau"));
-        dataList.add(new Item(R.drawable.parijoto, "Jus Parijoto"));
+        dataList.add(new Item("Lentog Tanjung", "5.0", R.drawable.lentog));
+        dataList.add(new Item("Kopi Jetak", "4.5", R.drawable.kopijetak));
+        dataList.add(new Item("Ayam Gongso", "4.5", R.drawable.gongso));
+        dataList.add(new Item("Wedang Blung", "4.5", R.drawable.blung));
+        dataList.add(new Item("Pindang Kerbau", "4.5", R.drawable.pindang));
+        dataList.add(new Item("Jus Parijoto", "5.0", R.drawable.parijoto));
 
 
         adapter = new ItemAdapter(dataList, getContext());

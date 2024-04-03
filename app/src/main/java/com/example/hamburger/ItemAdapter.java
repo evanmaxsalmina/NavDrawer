@@ -35,6 +35,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
         Item item= datalist.get(position);
         holder.textNama.setText(item.getNama());
         holder.imageGambar.setImageResource(item.getGambar());
+        holder.textRating.setText(item.getRating());
     }
 
     @Override
@@ -47,10 +48,13 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
         TextView textNama;
         ImageView imageGambar;
 
+        TextView textRating;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             textNama = itemView.findViewById(R.id.nama);
             imageGambar = itemView.findViewById(R.id.gambar);
+            textRating = itemView.findViewById(R.id.textRating);
         }
     }
 

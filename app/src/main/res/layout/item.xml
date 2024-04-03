@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="250dp"
+    android:layout_height="280dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal">
 
@@ -9,8 +9,9 @@
         android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="30dp"
         android:layout_marginTop="16dp"
-        android:layout_marginHorizontal="60dp"
+        android:layout_marginHorizontal="16dp"
         app:cardCornerRadius="15dp"
         app:cardElevation="15dp">
 
@@ -30,34 +31,47 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="10dp"
                 android:paddingStart="10dp"
                 android:background="@color/white">
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="horizontal"/>
 
                 <TextView
                     android:id="@+id/nama"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:hint="Name"
                     android:textSize="25dp"
+                    android:layout_marginTop="15dp"
                     android:textColor="@color/black"
                     android:fontFamily="@font/catcomic"
                     android:textStyle="bold"/>
 
                 <LinearLayout
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="horizontal"/>
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="end"
+                    android:padding="10dp"
+                    android:paddingEnd="10dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/textRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="99"
+                        android:fontFamily="@font/catcomic"
+                        android:textColor="#FFAB40"
+                        android:textSize="24dp" />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/star"
+                        android:layout_gravity="center_vertical"/>
+                </LinearLayout>
 
             </LinearLayout>
+
 
         </LinearLayout>
 
